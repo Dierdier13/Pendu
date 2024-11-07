@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="div-header">
+            <img src="./assets/images/logo.png" alt="logo">
+            <h1><strong>RAGNARÖK</strong></h1>
+        </div>
+        <div class="replay" id="replay"></div>
+    </header>
+    <main>
+        <section>
+            <!-- Modal de confirmation -->
+            <div class="modal-conf" id="confirmationModal">
+                <p>Voulez-vous vraiment recommencer ?</p><br>
+                <button id="confirmReplay">Oui</button>
+                <button id="cancelReplay">Non</button>
+            </div>
+            <!-- Overlay pour le modal -->
+            <div class="modal-overlay" id="modalOverlay">
+            </div>
+            <div class="div-delet">
+                <div id="deletSelec"></div>
+                <div id="deletAll"></div>
+            </div>
+        </section>
+        <section class="play" id="play">
+        </section>
+        <section class="game hidden" id="game">
+            <div class="pendu" id="pendu">
+                <img src="./assets/images/mjolnir_white.png" alt="mjolnir" id="image">
+            </div>
+            <div class="find-word" id="findWord">
+                <p></p>
+            </div>
+            <div class="alphabet" id="alphabet"></div>
+        </section>
+        <section class="winner hidden" id="winner">
+            <h2><strong>YOU WIN</strong></h2>
+            <img src="./assets/images/thor.gif" alt="thor">
+        </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
